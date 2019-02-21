@@ -1,0 +1,39 @@
+
+
+.qList
+{
+    display: none;
+}
+
+div.qList:first-child{
+    display: block;
+}
+
+#btnSubmit
+{
+    display: none;
+}
+
+.editList
+{
+    display: none;
+}
+
+div.editList:first-child{
+    display: block;
+}
+
+
+.scoreWrapper
+{
+    display: none;
+}
+
+div.scoreWrapper:first-of-type{
+    display: block;
+}
+
+#userScores
+{
+    display: none;
+}

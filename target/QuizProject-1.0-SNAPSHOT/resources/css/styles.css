@@ -1,0 +1,42 @@
+a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 10px 10px;
+}
+
+p, h1, h2 {
+    text-align: left;
+    margin: 10px;
+}
+
+.error{
+    color: #FF0000;
+}
+
+.succes{
+    color: #0000FF;
+}
+
+li {
+    list-style-type: none;
+}
+
+table.dataTable th:nth-child(5),
+table.dataTable th:nth-child(6) {
+  width: 10px;
+  max-width: 20px;
+  word-break: break-all;
+  white-space: pre-line;
+}
+
+
+table.dataTable td:nth-child(5),
+table.dataTable td:nth-child(6) {
+  width: 10px;
+  max-width: 20px;
+  word-break: break-all;
+  white-space: pre-line;
+}
+
+
+
