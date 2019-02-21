@@ -42,27 +42,30 @@
                     <s:url var="url_processQuiz" value="/user/processQuiz"/>                                         
                     <f:form action="${url_processQuiz}" method="POST" modelAttribute="cmd">
                         <c:forEach var="q" items="${cmd.questions}" varStatus="st">
-                                 <div class="qList">
-                                    <div class="jumbotron">
-                                        <f:input type="hidden" path="questions[${st.index}].id"/>
-                                        <h1 class="display-4">${q.text}</h1>
-                                        <hr class="my-4">
-                                        <c:forEach var="a" items="${q.answers}">
-                                            <label class="container">
-                                                <f:radiobutton  label="${a.text}" path="answers[${st.index}].id" value="${a.id}" required="required"></f:radiobutton></br>                       
-                                                    <span class="checkmark"></span>
-                                                </label>
-                                        </c:forEach>
-                                    </div>
+                            <div class="qList">
+                                <div class="jumbotron">
+                                    <f:input type="hidden" path="questions[${st.index}].id"/>
+                                    <h1 class="display-4">${q.text}</h1>
+                                    <hr class="my-4">
+                                    <c:forEach var="a" items="${q.answers}">
+                                        <label class="container">
+                                            <f:radiobutton  label="${a.text}" path="answers[${st.index}].id" value="${a.id}" required="required"></f:radiobutton></br>                       
+                                                <span class="checkmark"></span>
+                                            </label>
+                                    </c:forEach>
                                 </div>
+                            </div>
                         </c:forEach>
                         <a class="btn btn-primary btn-lg btn-block" id="btnNext" href="#" >Next</a>
                         <button class="btn btn-primary btn-lg btn-block" id="btnSubmit">Submit</button>
                     </f:form> 
 
-                    <jsp:include page="include/footerQuiz.jsp"/>
+                </div>
+            </div>
+        </div>
+        <jsp:include page="include/footerQuiz.jsp"/>
 
-                    <jsp:include page="include/js.jsp"/>
+        <jsp:include page="include/js.jsp"/>
 
-                    </body>
-                    </html>
+    </body>
+</html>
